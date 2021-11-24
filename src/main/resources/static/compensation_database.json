@@ -1,0 +1,22 @@
+[
+  {
+    "employeeId" : "16a596ae-edd3-4847-99fe-c4518e82c86f",
+    "salary" : 37,
+    "effectiveDate" : "1/1/40"
+  },
+  {
+    "employeeId" : "b7839309-3348-463b-a7e3-5de1c168beb3",
+    "salary" : 38,
+    "effectiveDate" : "1/1/40"
+  },
+  {
+    "employeeId" : "03aa1462-ffa9-4978-901b-7c001562cf6f",
+    "salary" : 39,
+    "effectiveDate" : "1/1/40"
+  },
+  {
+    "employeeId" : "c0c2293d-16bd-4603-8e08-638a9d18b22c",
+    "salary" : 5000000,
+    "effectiveDate" : "1/1/40"
+  }
+]
