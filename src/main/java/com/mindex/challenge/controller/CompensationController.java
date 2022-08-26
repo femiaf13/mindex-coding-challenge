@@ -1,7 +1,6 @@
 package com.mindex.challenge.controller;
 
 import com.mindex.challenge.data.Compensation;
-import com.mindex.challenge.data.Employee;
 import com.mindex.challenge.service.CompensationService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,11 +28,6 @@ public class CompensationController {
         return compensationService.read(id);
     }
 
-//    @PutMapping("/compensation/{id}")
-//    public Employee update(@PathVariable String id, @RequestBody Employee employee) {
-//        LOG.debug("Received employee create request for id [{}] and employee [{}]", id, employee);
-//
-//        employee.setEmployeeId(id);
-//        return compensationService.update(employee);
-//    }
+    // There should be a PUT(or PATCH) here to update compensation as
+    // the next TODO item beyond this exercise
 }
