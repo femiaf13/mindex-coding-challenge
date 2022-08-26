@@ -1,7 +1,5 @@
 package com.mindex.challenge.data;
 
-import java.util.Date;
-
 public class Compensation {
     private String employeeId;
     private double salary;
