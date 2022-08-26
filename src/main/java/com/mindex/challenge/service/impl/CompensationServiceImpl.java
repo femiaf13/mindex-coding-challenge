@@ -23,6 +23,11 @@ public class CompensationServiceImpl implements CompensationService {
     @Override
     public Compensation create(Compensation compensation) {
         LOG.debug("Creating compensation [{}]", compensation);
+        String id = compensation.getEmployeeId();
+
+        if (compensationRepository.findByEmployeeId(id) != null) {
+            throw new RuntimeException("Compensation for this employee already exists: " + id);
+        }
 
         compensationRepository.insert(compensation);
 
@@ -31,7 +36,7 @@ public class CompensationServiceImpl implements CompensationService {
 
     @Override
     public Compensation read(String id) {
-        LOG.debug("Reading employee with id [{}]", id);
+        LOG.debug("Reading compensation with id [{}]", id);
 
         Compensation compensation = compensationRepository.findByEmployeeId(id);
 
