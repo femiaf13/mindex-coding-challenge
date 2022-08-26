@@ -41,6 +41,15 @@ public class ReportingStructureServiceImplTest {
         testEmployee =  employeeRepository.findByEmployeeId(TEST_EMPLOYEE_ID);
     }
 
+    /**
+     * Similar to the compensation tests there could be many more tests here. The
+     * prime example I can think of right now is a test of the cycle detection.
+     * 
+     * The easiest way to implement that would be using the PUT for Employee to
+     * modify the employee at TEST_EMPLOYEE_ID to have a direct report of 
+     * themselves. Cycle created and you check for the error response from the server.
+     */
+
     @Test
     public void testRead() {
         ReportingStructure createdReportingStructure = new ReportingStructure(testEmployee, TEST_EMPLOYEE_NUMBER_OF_REPORTS);
